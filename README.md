@@ -1,14 +1,13 @@
 # Starred
 
-[![github workflow](https://github.com/maguowei/starred/workflows/ci/badge.svg)](https://github.com/maguowei/starred/actions)
-![Upload Python Package](https://github.com/maguowei/starred/workflows/Upload%20Python%20Package/badge.svg)
+[![CI](https://github.com/schaafjs/starred/workflows/ci/badge.svg)](https://github.com/schaafjs/starred/actions)
 
 ## Install
 
 ```bash
 
 $ pip install starred
-$ starred --username maguowei --sort > README.md
+$ starred --username schaafjs --sort > README.md
 ```
 
 ## Usage
@@ -20,16 +19,17 @@ Usage: starred [OPTIONS]
 
     GitHub starred
 
-    creating your own Awesome List used GitHub stars!
+    Create your own Awesome List using GitHub stars!
 
-    example:     starred --username maguowei --sort > README.md
+    example:     starred --username schaafjs --sort > README.md
 
 Options:
     --username TEXT    GitHub username
     --token TEXT       GitHub token
-    --sort             sort by language
-    --repository TEXT  repository name
-    --message TEXT     commit message
+    --sort             Sort by language
+    --repository TEXT  Repository name
+    --message TEXT     Commit message
+    --ci TEXT          Display CI status badge.
     --version          Show the version and exit.
     --help             Show this message and exit.
 ```
@@ -44,6 +44,9 @@ $ starred --username yourname --repository awesome-stars --sort
 
 - [`maguowei/awesome-stars`](https://github.com/maguowei/awesome-stars)
 - [update awesome-stars every day by GitHub Action](https://github.com/maguowei/awesome-stars/blob/master/.github/workflows/schedules.yml) the example with GitHub Action
+
+## Notice
+This repository is a fork of https://github.com/maguowei/starred with the optional feature to display the status of your CI instead of the [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) badge in the ```README.md``` file.
 
 ## FAQ
 
@@ -63,5 +66,5 @@ $ starred --username yourname --repository awesome-stars --sort
 3. Install the master branch version
 
     ```bash
-    $ pip install -e git+https://github.com/maguowei/starred#egg=starred
+    $ pip install -e git+https://github.com/schaafjs/starred.git
     ```

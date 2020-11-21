@@ -33,12 +33,12 @@ def html_escape(text):
 @click.command()
 @click.option('--username', envvar='USER', help='GitHub username')
 @click.option('--token', envvar='GITHUB_TOKEN', help='GitHub token')
-@click.option('--sort', is_flag=True, help='sort by language')
-@click.option('--repository', default='', help='repository name')
-@click.option('--message', default='update stars', help='commit message')
+@click.option('--sort', is_flag=True, help='Sort by language')
+@click.option('--repository', default='', help='Repository name')
+@click.option('--message', default='update stars', help='Commit message')
 @click.option('--ci', default='[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d730\
 5f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)',
-              help='display ci status badge instead of awesome badge')
+              help='Display ci status badge instead of awesome badge')
 @click.version_option(version=VERSION, prog_name='starred')
 def starred(username, token, sort, repository, message, ci):
     """GitHub starred
@@ -46,7 +46,7 @@ def starred(username, token, sort, repository, message, ci):
     Create your own Awesome List using GitHub stars!
 
     example:
-        starred --username maguowei --sort > README.md
+        starred --username schaafjs --sort > README.md
     """
     # Expects either an empty string or a complete workflow badge link
     desc = '''# Stars''' + str(ci) + '''
