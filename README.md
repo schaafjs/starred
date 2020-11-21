@@ -33,6 +33,7 @@ Options:
     --version          Show the version and exit.
     --help             Show this message and exit.
 ```
+> `-ci` expects input of the form `![workflow name](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_FILE_PATH>/badge.svg)`
 
 ## Demo
 
