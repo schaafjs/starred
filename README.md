@@ -1,6 +1,6 @@
 # Starred
 
-[![CI](https://github.com/schaafjs/starred/workflows/ci/badge.svg)](https://github.com/schaafjs/starred/actions)
+[![CI](https://github.com/schaafjs/starred/workflows/ci/badge.svg)](https://github.com/schaafjs/starred/actions) [![This Repository uses a generated Social Preview from @pqt/social-preview](https://img.shields.io/badge/%E2%9C%93-Social%20Preview-blue)](https://github.com/pqt/social-preview)
 
 ## Install
 
@@ -33,7 +33,7 @@ Options:
     --version          Show the version and exit.
     --help             Show this message and exit.
 ```
-> `-ci` expects input of the form `![workflow name](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_FILE_PATH>/badge.svg)`
+> `--ci` expects input of the form `![workflow name](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_FILE_PATH>/badge.svg)`
 
 ## Demo
 
